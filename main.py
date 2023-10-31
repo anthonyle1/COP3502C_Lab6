@@ -1,3 +1,4 @@
+#Andria Subhit
 def encoder(number):
     encoded_password = ""
     for x in range(len(number)): # password is normally 8 digits long
