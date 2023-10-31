@@ -14,13 +14,17 @@ def menu():
 def main():
     while True:
         print(menu()) # prints menu
+        print("")
         option = int(input("Choose an option:")) # asks user to choose an option, based on menu prompt
         if option == 1:
-            print(encoder(input("Password:"))) # asks the user for their passwords, returns encrypted password to user
+            # asks the user for their passwords, saves encrypted password
+            encrypted_pw = encoder(input("Please enter your password to encode:"))
+            print("Your password has been encoded and stored!")
         elif option == 2:
             pass # FIXME : not completed
         elif option == 3:
             break # ends program
+        print("")
 
 
 if __name__ == "__main__":
